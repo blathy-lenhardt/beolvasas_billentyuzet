@@ -154,6 +154,16 @@ namespace beolvasas_billentyuzet
 				sum += papirpenz[i] * bankjegyek[i];
 			}
 			Console.WriteLine("Össz bevétel: {0}", sum);
+
+			// 8. feladat: Egy pénztáros a napi bevételének 5%-át megkapja jutalomként.
+			//	Kérje be a napi bevételt és írja ki a képernyőre mennyi a jutalom! A jutalmat kerekítse egész értékre!
+			int bevetel;
+			double jutalom;
+			Console.WriteLine("8. feladat");
+			Console.Write("Adja meg a napi bevételt: ");
+			bevetel = Convert.ToInt32(Console.ReadLine());
+			jutalom = Math.Round(bevetel * 0.05);
+			Console.WriteLine("Jutalom: {0}", jutalom);
 		}
 	}
 }
