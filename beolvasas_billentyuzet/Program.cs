@@ -52,6 +52,44 @@ namespace beolvasas_billentyuzet
 			Console.WriteLine("Adjon meg két számot egymás után ENTER lenyomásával:");
 			x = Convert.ToInt32(Console.ReadLine()) + Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine(x);
+
+			// MATEMATIKA FÜGGVÉNY
+			/* Math.Abs();
+			 * Egy adott szám abszolút értékét adja vissza.
+			 * pl.: Math.Abs(-4); -> 4
+			 * 
+			 * Math.Pow(alap, kitevő);
+			 * Hatványozás. Az első paraméter a hatvány alapja, a második paraméter a hatvány kitevője.
+			 * N-edik gyök számítására is alkalmas, ha a kitevő tört.
+			 * Pl.:	Math.Pow(2, 3);		-> 8
+			 *	Math.Pow(2, -3);	-> 0,125
+			 *	Math.Pow(-2, 3);	-> -8
+			 *	Math.Pow(-3, -3);	-> -0,125
+			 * 
+			 * Köbgyökvonás
+			 * Math.Pow(8, 1/3);		-> 1 (szemantikai hiba)
+			 * Math.Pow(8, 1/float(3));	-> 2
+			 * 
+			 * A hatványozás eredménye valós típusú szám lesz!
+			 * 
+			 * Math.Round(valós szám);
+			 * Kerekítés egész számra a matematika szabályainak megfelelően.
+			 * Pl.:	Math.Round(2.325);	-> 2
+			 *	Math.Round(2.525);	-> 3
+			 *	Math.Round(-2.325);	-> -2
+			 *	Math.Round(-2.525);	-> -3
+			 *	
+			 * Math.Round(valós szám, egész jegy);
+			 * Kerekítés a megadott tizedes jegyig.
+			 * Pl.:	Math.Round(3.256, 2);	-> 3.26
+			 * 
+			 * Math.Sqrt();
+			 * Visszaadja a megadott szám négyzetgyökét.
+			 * Pl.:	Math.Sqrt(4);	-> 2
+			 * 
+			 * Math.PI;
+			 * Konstans szám. Ezen keresztül tudjuk lekérdezni a PI értékét.
+			 */
 		}
 	}
 }
