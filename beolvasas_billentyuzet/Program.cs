@@ -121,6 +121,18 @@ namespace beolvasas_billentyuzet
 			felszin = 6 * Math.Pow(él, 2);
 			terfogat = Math.Pow(él, 3);
 			Console.WriteLine("Felszín: {0}\nTérfogat: {1}", felszin, terfogat);
+
+			// 5. feladat: Kérje be a henger sugarát és magasságát, majd számítsa ki a henger felszínét és térfogatát!
+			//	Az eredményt írja ki 2 tizedes pontossággal a képernyőre!
+			double hsugar, hmagassag, hfelszin, hterfogat;
+			Console.WriteLine("5. feladat");
+			Console.Write("Henger sugár: ");
+			hsugar = Convert.ToDouble(Console.ReadLine());
+			Console.Write("Henger magasság: ");
+			hmagassag = Convert.ToDouble(Console.ReadLine());
+			hfelszin = Math.Pow(hsugar, 2) * Math.PI * 2 + 2 * Math.PI * hsugar * hmagassag;
+			hterfogat = Math.Pow(hsugar, 2) * Math.PI * hmagassag;
+			Console.WriteLine("Felszín: {0:0.00}\nTérfogat: {1:0.00}", hfelszin, hterfogat);
 		}
 	}
 }
