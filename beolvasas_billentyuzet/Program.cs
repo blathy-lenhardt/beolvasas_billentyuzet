@@ -133,6 +133,14 @@ namespace beolvasas_billentyuzet
 			hfelszin = Math.Pow(hsugar, 2) * Math.PI * 2 + 2 * Math.PI * hsugar * hmagassag;
 			hterfogat = Math.Pow(hsugar, 2) * Math.PI * hmagassag;
 			Console.WriteLine("Felszín: {0:0.00}\nTérfogat: {1:0.00}", hfelszin, hterfogat);
+
+			// 6. feladat: Kérjen be egy számot és írja ki a köbgyökét 4 tizedes pontossággal!
+			double num6;
+			Console.WriteLine("6. feladat");
+			Console.Write("Adjon meg egy számot: ");
+			num6 = Convert.ToDouble(Console.ReadLine());
+			num6 = Math.Round(Math.Pow(num6, 1 / (float)3), 4);
+			Console.WriteLine(num6);
 		}
 	}
 }
