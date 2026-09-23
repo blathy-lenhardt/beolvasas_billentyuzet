@@ -103,6 +103,15 @@ namespace beolvasas_billentyuzet
 			Console.WriteLine("{0}**{1}={2}", alap, kitevo, hatvany);
 			gyok = Math.Round(Math.Sqrt(hatvany), 2);
 			Console.WriteLine("sqrt({0}) = {1}", hatvany, gyok);
+
+			// 3. feladat: Kérjük be egy kör sugarát és írjuk ki a kerületét és a területét 2 tizedes pontossággal!
+			double sugar, kerulet, terulet;
+			Console.WriteLine("3. feladat.");
+			Console.Write("Sugár: ");
+			sugar = Convert.ToDouble(Console.ReadLine());
+			kerulet = Math.PI * 2 * sugar;
+			terulet = Math.Pow(sugar, 2) * Math.PI;
+			Console.WriteLine("Kerület: {0:0.00}\nTerület: {1:0.00}", kerulet, terulet);
 		}
 	}
 }
