@@ -112,6 +112,15 @@ namespace beolvasas_billentyuzet
 			kerulet = Math.PI * 2 * sugar;
 			terulet = Math.Pow(sugar, 2) * Math.PI;
 			Console.WriteLine("Kerület: {0:0.00}\nTerület: {1:0.00}", kerulet, terulet);
+
+			// 4. feladat: Kérje be egy kocka élének hosszát és számítsa ki a kocka felszínét és térfogatát!
+			double él, felszin, terfogat;
+			Console.WriteLine("4. feladat");
+			Console.Write("A kocka éle: ");
+			él = Convert.ToDouble(Console.ReadLine());
+			felszin = 6 * Math.Pow(él, 2);
+			terfogat = Math.Pow(él, 3);
+			Console.WriteLine("Felszín: {0}\nTérfogat: {1}", felszin, terfogat);
 		}
 	}
 }
