@@ -45,6 +45,13 @@ namespace beolvasas_billentyuzet
 			 * char k = ' ';
 			 * k = Convert.ToChar(Console.ReadLine());
 			 */
+
+			// 1. feladat: Írjunk programot, amely bekér két egész számot a billentyűzetről és kiírja az összegüket.
+			int x;
+			Console.WriteLine("1. feladat: Két szám összegének kiszámítása!");
+			Console.WriteLine("Adjon meg két számot egymás után ENTER lenyomásával:");
+			x = Convert.ToInt32(Console.ReadLine()) + Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine(x);
 		}
 	}
 }
