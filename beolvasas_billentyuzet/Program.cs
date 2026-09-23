@@ -141,6 +141,19 @@ namespace beolvasas_billentyuzet
 			num6 = Convert.ToDouble(Console.ReadLine());
 			num6 = Math.Round(Math.Pow(num6, 1 / (float)3), 4);
 			Console.WriteLine(num6);
+
+			// 7. feladat: Készítsen programot, amely segít a pénztárosnak a papírpénzek értékének megszámolásánál!
+			//	Kérje be melyik bankjegyből (500, 1000, 2000, 5000, 10000, 20000) hány darab van és a végén adja meg az összes bevételt.
+			int[] papirpenz = { 0, 0, 0, 0, 0, 0 };
+			uint[] bankjegyek = { 500, 1000, 2000, 5000, 10000, 20000 };
+			long sum = 0;
+			for (uint i = 0;i < papirpenz.Length;i++)
+			{
+				Console.Write("Hány {0}-as/es bankjegy van? ", bankjegyek[i]);
+				papirpenz[i] = Convert.ToInt32(Console.ReadLine());
+				sum += papirpenz[i] * bankjegyek[i];
+			}
+			Console.WriteLine("Össz bevétel: {0}", sum);
 		}
 	}
 }
