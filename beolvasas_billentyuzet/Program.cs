@@ -90,6 +90,19 @@ namespace beolvasas_billentyuzet
 			 * Math.PI;
 			 * Konstans szám. Ezen keresztül tudjuk lekérdezni a PI értékét.
 			 */
+
+			// 2. feladat: Írjunk programot, amely bekér két egész számot, az alapot és a kitevőt a billentyűzetről és kiírja a hatványt,
+			//	majd ennek a számnak a gyökét két tizedes pontossággal!
+			double alap, kitevo, hatvany, gyok;
+			Console.WriteLine("2. feladat.");
+			Console.Write("Alap: ");
+			alap = Convert.ToDouble(Console.ReadLine());
+			Console.Write("Kitevő: ");
+			kitevo = Convert.ToDouble(Console.ReadLine());
+			hatvany = Math.Pow(alap, kitevo);
+			Console.WriteLine("{0}**{1}={2}", alap, kitevo, hatvany);
+			gyok = Math.Round(Math.Sqrt(hatvany), 2);
+			Console.WriteLine("sqrt({0}) = {1}", hatvany, gyok);
 		}
 	}
 }
